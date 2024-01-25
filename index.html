@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <main class="main">
+      <form class="form">
+        <h1 class="join-header">Stay updated!</h1>
+        <aside class="join-description">
+          Join 60,000+ product managers receiving monthly updates on:
+        </aside>
+
+        <div class="product-description">
+          <div>
+            <img src="assets/images/icon-list.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div>
+            <img src="assets/images/icon-list.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div>
+            <img src="assets/images/icon-list.svg" alt="" />
+            <p>And much more!</p>
+          </div>
+        </div>
+
+        <div class="labels">
+          <label for="email" class="email-label">Email address</label>
+          <label class="error-label">Valid email required</label>
+        </div>
+        <input type="text" id="email" placeholder="email@company.com" />
+        <button type="submit" class="submit-btn">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+
+      <section class="img-container">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </section>
+
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <section class="success-container">
+        <div>
+          <div class="success-img">
+            <img src="assets/images/icon-success.svg" alt="" />
+          </div>
+          <h1 class="thanks-header">Thanks for subscribing!</h1>
+          <h3 class="confirmation">
+            A confirmation email has been sent to
+            <aside class="email-text">ash@loremcompany.com</aside>
+            . Please open it and click the button inside to confirm your
+            subscription.
+          </h3>
+        </div>
+        <button class="dismiss-btn">Dismiss message</button>
+      </section>
+    </main>
+    <!-- Success message end -->
+    <script src="index.js"></script>
+  </body>
+</html>
